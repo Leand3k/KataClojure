@@ -5,10 +5,7 @@
           [(hex (bit-shift-right v 4)) (hex (bit-and v 0x0F))]))]
         (apply str (mapcat hexify-byte coll)))))
 
-;; (defn hexify-str [s]
-;;   (hexify (.getBytes s))
+(defn hexify-str [s]
+  (hexify (.getBytes s)))
 
-(hexify[11])
-
-
-;; (defn test ((is (= "65" (hexify[101])))))
+(hexify[11010])
